@@ -41,7 +41,7 @@ namespace Shared.Contracts
     // Why "in TCommand"? Contravariance allows a handler registered for a base command
     // type to handle derived command types. This is rarely used in practice but the
     // keyword is here because MediatR's request interface uses it.
-    public interface ICommandHandler<in TCommand, TResponse> : IRequestHandler<ICommand, TResponse>
+    public interface ICommandHandler<in TCommand, TResponse> : IRequestHandler<TCommand, TResponse>
     where TCommand : ICommand<TResponse>
     where TResponse : notnull
     {
