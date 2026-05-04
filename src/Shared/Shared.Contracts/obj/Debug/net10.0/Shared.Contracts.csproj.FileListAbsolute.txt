@@ -9,3 +9,5 @@
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/refint/Shared.Contracts.dll
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.pdb
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/ref/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.csproj.AssemblyReference.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.sourcelink.json
