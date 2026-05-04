@@ -1,0 +1,11 @@
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/bin/Debug/net10.0/Shared.Contracts.deps.json
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/bin/Debug/net10.0/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/bin/Debug/net10.0/Shared.Contracts.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.AssemblyInfoInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.AssemblyInfo.cs
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.csproj.CoreCompileInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/refint/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/Shared.Contracts.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared.Contracts/obj/Debug/net10.0/ref/Shared.Contracts.dll

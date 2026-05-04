@@ -1,0 +1,15 @@
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/bin/Debug/net10.0/Shared.deps.json
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/bin/Debug/net10.0/Shared.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/bin/Debug/net10.0/Shared.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/bin/Debug/net10.0/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/bin/Debug/net10.0/Shared.Contracts.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.csproj.AssemblyReference.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.AssemblyInfoInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.AssemblyInfo.cs
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.csproj.CoreCompileInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.csproj.Up2Date
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/refint/Shared.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/Shared.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/obj/Debug/net10.0/ref/Shared.dll

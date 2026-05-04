@@ -1,0 +1,15 @@
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/bin/Debug/net10.0/Catalog.deps.json
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/bin/Debug/net10.0/Catalog.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/bin/Debug/net10.0/Catalog.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/bin/Debug/net10.0/Shared.Contracts.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/bin/Debug/net10.0/Shared.Contracts.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.csproj.AssemblyReference.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.GeneratedMSBuildEditorConfig.editorconfig
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.AssemblyInfoInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.AssemblyInfo.cs
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.csproj.CoreCompileInputs.cache
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.csproj.Up2Date
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/refint/Catalog.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/Catalog.pdb
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Catalog/Catalog/obj/Debug/net10.0/ref/Catalog.dll
