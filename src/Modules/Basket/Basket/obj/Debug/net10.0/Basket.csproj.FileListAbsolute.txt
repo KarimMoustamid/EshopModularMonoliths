@@ -13,3 +13,4 @@
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Basket/Basket/obj/Debug/net10.0/refint/Basket.dll
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Basket/Basket/obj/Debug/net10.0/Basket.pdb
 /Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Basket/Basket/obj/Debug/net10.0/ref/Basket.dll
+/Users/karimmoustamid/Desktop/Code/Backend/App/src/Modules/Basket/Basket/obj/Debug/net10.0/Basket.sourcelink.json

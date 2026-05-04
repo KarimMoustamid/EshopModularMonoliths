@@ -51,6 +51,17 @@
           }
         }
       },
+      "FluentValidation.DependencyInjectionExtensions/12.1.0": {
+        "dependencies": {
+          "FluentValidation": "12.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.0.0"
+          }
+        }
+      },
       "MediatR/14.1.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
@@ -70,17 +81,6 @@
           "lib/netstandard2.0/MediatR.Contracts.dll": {
             "assemblyVersion": "2.0.1.0",
             "fileVersion": "2.0.1.0"
-          }
-        }
-      },
-      "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-        "dependencies": {
-          "MediatR": "14.1.0"
-        },
-        "runtime": {
-          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.1.0.0"
           }
         }
       },
@@ -307,8 +307,10 @@
       },
       "Shared/1.0.0": {
         "dependencies": {
+          "Carter": "10.0.0",
+          "FluentValidation": "12.1.0",
+          "FluentValidation.DependencyInjectionExtensions": "12.1.0",
           "MediatR": "14.1.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Shared.Contracts": "1.0.0"
         },
         "runtime": {
@@ -319,6 +321,9 @@
         }
       },
       "Shared.Contracts/1.0.0": {
+        "dependencies": {
+          "MediatR": "14.1.0"
+        },
         "runtime": {
           "Shared.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -355,6 +360,13 @@
       "path": "fluentvalidation/12.1.0",
       "hashPath": "fluentvalidation.12.1.0.nupkg.sha512"
     },
+    "FluentValidation.DependencyInjectionExtensions/12.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p9ZnpVCUvkelSfqFYZP9aMtnuRlDRkrAAPqjQGG+1mVVn8zxE0bc1/RAFRBZKsPglbMBQOx8wXOZhg2fGstacQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/12.1.0",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.12.1.0.nupkg.sha512"
+    },
     "MediatR/14.1.0": {
       "type": "package",
       "serviceable": true,
@@ -368,13 +380,6 @@
       "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
       "path": "mediatr.contracts/2.0.1",
       "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
-    },
-    "MediatR.Extensions.Microsoft.DependencyInjection/11.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RW3etRuy6Xp63cgqfC0r/ITOtUT0f9ymJl1+1XZdzsYUsfv7WBPC2kXGOP8IYpY/6c4Q6805vbIW/88DopUs3w==",
-      "path": "mediatr.extensions.microsoft.dependencyinjection/11.1.0",
-      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/10.0.0-rc.2.25502.107": {
       "type": "package",

@@ -37,7 +37,7 @@ namespace Shared.Extensions
         {
             // Delegate to Carter's built-in AddCarter method, but wrap it with our discovery logic.
             // We pass a configurator function that will be called by Carter during setup.
-            services.AddCarter(Configuration: config =>
+            services.AddCarter(configurator: config =>
             {
                 // For each assembly the caller passed in, discover all module types.
                 foreach (var assembly in assemblies)
@@ -45,7 +45,7 @@ namespace Shared.Extensions
                     // Use reflection to find all types in this assembly that implement the ICarterModule interface.
                     // GetTypes() returns all types in the assembly; Where filters to those assignable to ICarterModule.
                     // ToArray() materializes the results so we can pass them to WithModules in one batch. 
-                    var modules = assembly.GetTypes().Where(t => t.IsAssignableTo(typeof(ICarterModule))).toArray();
+                    var modules = assembly.GetTypes().Where(t => t.IsAssignableTo(typeof(ICarterModule))).ToArray();
 
                     // Register all discovered modules with Carter's configuration.
                     // WithModules() tells Carter which module classes to instantiate and wire as route handlers.

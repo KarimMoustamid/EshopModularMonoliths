@@ -43,6 +43,8 @@ namespace Shared.Extensions
         /// <returns>The same IServiceCollection for method chaining</returns>
         public static IServiceCollection AddMediatRWithAssemblies(this IServiceCollection services, params Assembly[] assemblies)
         {
+            services.AddValidatorsFromAssemblies(assemblies);
+
             // Register MediatR and discover all CQRS handlers (IRequestHandler<TRequest, TResponse>) in the assemblies
             services.AddMediatR(config =>
             {
@@ -62,6 +64,8 @@ namespace Shared.Extensions
                 config.AddOpenBehavior(typeof(LoggingBehavior<,>));
 
             });
+
+            return services;
         }
     }
 }

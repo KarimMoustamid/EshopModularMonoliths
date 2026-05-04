@@ -1,31 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "ZN8lSsVQxI0=",
+  "dgSpecHash": "6WnE9qwX8AM=",
   "success": true,
   "projectFilePath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/Shared.csproj",
   "expectedPackageFiles": [
+    "/Users/karimmoustamid/.nuget/packages/carter/10.0.0/carter.10.0.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/carter.analyzers/10.0.0/carter.analyzers.10.0.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/fluentvalidation/12.1.0/fluentvalidation.12.1.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.0/fluentvalidation.dependencyinjectionextensions.12.1.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/mediatr/14.1.0/mediatr.14.1.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/Users/karimmoustamid/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/microsoft.codeanalysis.analyzers/3.11.0/microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/microsoft.codeanalysis.common/4.14.0/microsoft.codeanalysis.common.4.14.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/microsoft.codeanalysis.csharp/4.14.0/microsoft.codeanalysis.csharp.4.14.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/microsoft.extensions.dependencymodel/10.0.0/microsoft.extensions.dependencymodel.10.0.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 14.1.0 was resolved.",
-      "projectPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/Shared.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Shared/Shared/Shared.csproj",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

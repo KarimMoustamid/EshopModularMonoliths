@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "gRTNusGyjto=",
+  "dgSpecHash": "blJ6c8l5EUA=",
   "success": true,
   "projectFilePath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj",
   "expectedPackageFiles": [
     "/Users/karimmoustamid/.nuget/packages/carter/10.0.0/carter.10.0.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/carter.analyzers/10.0.0/carter.analyzers.10.0.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/fluentvalidation/12.1.0/fluentvalidation.12.1.0.nupkg.sha512",
+    "/Users/karimmoustamid/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.0/fluentvalidation.dependencyinjectionextensions.12.1.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/mediatr/14.1.0/mediatr.14.1.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
-    "/Users/karimmoustamid/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.aspnetcore.openapi/10.0.0-rc.2.25502.107/microsoft.aspnetcore.openapi.10.0.0-rc.2.25502.107.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.codeanalysis.analyzers/3.11.0/microsoft.codeanalysis.analyzers.3.11.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.codeanalysis.common/4.14.0/microsoft.codeanalysis.common.4.14.0.nupkg.sha512",
@@ -23,18 +23,5 @@
     "/Users/karimmoustamid/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
     "/Users/karimmoustamid/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1608",
-      "level": "Warning",
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 14.1.0 was resolved.",
-      "projectPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

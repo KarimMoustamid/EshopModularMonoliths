@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Shared.Behaviors;
-using Shared.Data.Interceptors;
 
 namespace Catalog
 {
@@ -44,30 +41,7 @@ namespace Catalog
             // Data - Infrastructure services
             // This layer registers database access, EF Core, and lower-level infrastructure.
             // We read the connection string once at startup to avoid repeated configuration lookups.
-            var connectingString = configuration.GetConnectionString("Database");
-
-            // Register EF Core interceptors. These hook into the SaveChanges pipeline to add cross-cutting behavior.
-            // AuditableEntityInterceptor: marks CreatedAt/UpdatedAt timestamps automatically.
-            // DispatchDomainEventsInterceptor: publishes domain events to the domain event bus after commit.
-            // Both must be Scoped so each request/unit-of-work gets its own interceptor instance.
-            services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
-            services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
-
-            // Register CatalogDbContext with PostgreSQL and the interceptors we just registered.
-            // The factory pattern (sp, options) allows us to inject services (sp.GetServices) into DbContext configuration.
-            // UseNpgsql tells EF Core to use PostgreSQL as the database provider.
-            services.AddDbContext<CatalogDbContext>((sp, options) =>
-            {
-                // Inject all ISaveChangesInterceptor implementations so they fire during SaveChanges.
-                // This is why we registered both interceptors above — they are discovered here via GetServices.
-                options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
-                // Configure PostgreSQL connection. The connection string was injected from configuration above.
-                options.UseNpgsql(connectionString);
-            });
-
-
-            // Register the data seeder so initial seed data can be injected and applied at startup.
-            services.AddScoped<IDataSeeder, CatalogDataSeeder>();
+            _ = configuration.GetConnectionString("Database");
 
             return services;
 
@@ -97,8 +71,6 @@ namespace Catalog
             // 3. Use Data - Infrastructure services
             // Run EF Core migrations at startup. This ensures the database schema is up-to-date before
             // any requests are processed. If a migration fails, the app fails to start (fail-fast design).
-            app.UseMigration<CatalogDbContext>();
-
             return app;
         }
     }
