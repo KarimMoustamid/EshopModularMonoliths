@@ -87,7 +87,6 @@
       },
       "Microsoft.IdentityModel.Tokens/8.14.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
           "Microsoft.IdentityModel.Logging": "8.14.0"
         },
         "runtime": {
