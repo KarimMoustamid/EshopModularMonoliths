@@ -1,4 +1,3 @@
-using System.Linq;
 // ============================================================================
 // This file demonstrates the Module Discovery pattern in a Modular Monolith.
 // Carter is an HTTP framework that routes requests to handler classes called Modules.
@@ -11,6 +10,7 @@ using System.Linq;
 
 using System.Reflection;
 using Carter;
+using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Shared.Extensions
