@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj": {}
+    "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/Api/API.csproj": {}
   },
   "projects": {
-    "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj": {
+    "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/Api/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj",
+        "projectUniqueName": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/Api/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/API.csproj",
+        "projectPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/Api/API.csproj",
         "packagesPath": "/Users/karimmoustamid/.nuget/packages/",
-        "outputPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/api/obj/",
+        "outputPath": "/Users/karimmoustamid/Desktop/Code/Backend/App/src/Bootstrapper/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/karimmoustamid/.nuget/NuGet/NuGet.Config"
@@ -64,6 +64,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.0-rc.2.25502.107, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.7, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[10.0.0, )"
             }
           },
           "imports": [

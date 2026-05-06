@@ -24,9 +24,9 @@ global using Carter;
 // shared composition methods (e.g., services.AddSharedServices()) from Program.cs.
 global using Shared.Extensions;
 
-// Exception handling middleware and models are globally available, so exception handler
-// registration in Program.cs doesn't require explicit imports.
-global using Shared.Exceptions.Handler;
+// Redis cache extension methods are provided by Microsoft.Extensions.Caching.StackExchangeRedis.
+// Adding this globally ensures Program.cs can call AddStackExchangeRedisCache without an extra import.
+global using Microsoft.Extensions.Caching.StackExchangeRedis;
 
 // Serilog is our cross-cutting logging concern. Making it global means any code in the
 // bootstrapper that needs structured logging (e.g., in configuration setup) doesn't need
@@ -41,15 +41,3 @@ global using FluentValidation;
 // Shared.Behaviors contains the MediatR pipeline behaviors (validation, logging, error handling).
 // Making it global allows Program.cs to wire them into the MediatR pipeline without imports.
 global using Shared.Behaviors;
-
-// === MESSAGING & INTEGRATION ===
-// Shared.Messaging.Extensions contains the extension methods that wire up message publishing
-// and event handling infrastructure (e.g., services.AddMessaging()). Global access is necessary
-// because message publishing is used across all modules.
-global using Shared.Messaging.Extensions;
-
-// === AUTHENTICATION & SECURITY ===
-// Keycloak.AuthServices.Authentication provides the extensions and types needed to configure
-// OAuth2/OpenID Connect with our Keycloak instance in Program.cs. Making it global means
-// auth configuration reads naturally without import noise.
-global using Keycloak.AuthServices.Authentication;
