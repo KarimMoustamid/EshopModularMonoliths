@@ -21,6 +21,8 @@
 // - Configuration binding (appsettings.json from Phase 1)
 // The step is done when `dotnet build` shows "Build succeeded."
 
+using Shared.Exceptions.Handler;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // ══════════════════════════════════════════
@@ -94,3 +96,67 @@ builder.Services
     .AddCatalogModule(builder.Configuration)
     .AddBasketModule(builder.Configuration)
     .AddOrderingModule(builder.Configuration);
+
+// CustomExceptionHandler is the central exception handler (Shared.Exceptions.Handler namespace).
+// It catches all exceptions thrown by endpoints or handlers and returns standardized ProblemDetails.
+// This is added AFTER module services so modules can throw application-specific exceptions
+// that the handler will catch and transform.
+// The handler uses BadRequestException and InternalServerException to categorize errors.
+builder.Services
+    .AddExceptionHandler<CustomExceptionHandler>();
+
+
+// ══════════════════════════════════════════
+// Build the app and configure the HTTP pipeline
+// ══════════════════════════════════════════
+var app = builder.Build();
+
+/ Configure the HTTP request pipeline.
+
+// ══════════════════════════════════════════
+// Carter endpoint mapping (Phase 1)
+// ══════════════════════════════════════════
+// Maps all ICarterModule endpoints to the request pipeline.
+// This must happen before exception handler middleware so exceptions are caught.
+app.MapCarter();
+
+// ══════════════════════════════════════════
+// Structured request logging (Phase 1)
+// ══════════════════════════════════════════
+// Logs every HTTP request with rich context (method, path, status code, duration).
+app.UseSerilogRequestLogging();
+
+// ══════════════════════════════════════════
+// Register CustomExceptionHandler in middleware pipeline
+// ══════════════════════════════════════════
+// app.UseExceptionHandler() activates the CustomExceptionHandler registered above.
+// This middleware wraps all downstream middleware and endpoints, catching unhandled exceptions
+// and transforming them into ProblemDetails JSON responses.
+// It must come AFTER routing (MapCarter) but BEFORE authentication so that authentication
+// failures (e.g., missing tokens) also return ProblemDetails.
+// The handler reads the exception type and returns:
+// - HTTP 400 + ProblemDetails for BadRequestException
+// - HTTP 500 + ProblemDetails for InternalServerException (or any other exception)
+app.UseExceptionHandler(options => { });
+
+// ══════════════════════════════════════════
+// Authentication and Authorization (Phase 1)
+// ══════════════════════════════════════════
+// UseAuthentication validates JWT tokens from Keycloak.
+// UseAuthorization enforces [Authorize] attributes on endpoints.
+app.UseAuthentication();
+app.UseAuthorization();
+
+// ══════════════════════════════════════════
+// Per-module middleware setup (Phase 1)
+// ══════════════════════════════════════════
+// Each module's UseXxxModule() registers its own middleware if needed (e.g., custom context).
+app
+    .UseCatalogModule()
+    .UseBasketModule()
+    .UseOrderingModule();
+
+// ══════════════════════════════════════════
+// Start the application
+// ══════════════════════════════════════════
+app.Run();
